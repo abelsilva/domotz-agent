@@ -20,6 +20,7 @@ ADD start.sh /srv/bin/start.sh
 RUN chmod +x /srv/bin/start.sh
 
 EXPOSE 3000
+VOLUME /opt/domotz/etc
 VOLUME /opt/domotz/var/cache
 VOLUME /opt/domotz/var/log/domotz
 
