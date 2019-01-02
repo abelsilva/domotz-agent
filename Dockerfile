@@ -11,7 +11,7 @@ RUN apt-get update \
         lsb-release \
  && rm -rf /var/lib/apt/lists/*
 
-RUN export DOWNLOAD_URL="https://portal.domotz.com/download/agent_packages/domotz-debian-x64-1.0-2.1.5-0354.deb" \
+RUN export DOWNLOAD_URL="https://portal.domotz.com/download/agent_packages/domotz-debian-x64-1.0-2.4.1-2.3.1-b001-0058.deb" \
  && curl -L ${DOWNLOAD_URL} -o /tmp/domotz-agent.deb \
  && dpkg -i /tmp/domotz-agent.deb \
  && rm -f /tmp/domotz-agent.deb
